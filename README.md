@@ -1,7 +1,7 @@
 # ObsidianEncryptedCloudSync
 Scripts to encrypt Obsidian Vaults and sync them over the cloud
 
-A setup and shell scripts to use a public cloud service as Dropbox to sync encrypted Obsidian Vaults between Mac an/or Linux and/or Android devices. 
+A setup and shell scripts to use a public cloud service as Dropbox to sync encrypted Obsidian Vaults between Mac an/or Linux and/or Android devices. No root needed.
 
 When closing the vault, the script will create an encrypted 7z archive of the vault and upload it to the cloud. After closing, all unencrypted notes are deleted. 
 To retrieve your notes, the script will make an unzipped copy of the archeive available locally. 
