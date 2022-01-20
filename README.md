@@ -45,3 +45,17 @@ To retrieve your notes, the script will make an unzipped copy of the archive ava
 1. Start toggle_private or toggle_droid by click or via command line
 2. If vault is open, you will be promted to close it
 3. If vault is closed, you will be prompted for password to open it
+
+# File Creation Dates
+
+Zipping and unzipping can modify note creation as shown when displaying a file list in Obsidian's file explorer when files are modified. To account for this, the scripts include a loop to reset file creation dates to dates set in note yaml metadata. To make use of this, set a template to begin your notes with this heading: 
+```---
+created:YYYY-MM-DD HH:MM
+```
+e.g.
+```
+---
+created: 2022-01-20 17:01
+```
+
+If you do not care about file creation order, simply delete the 
