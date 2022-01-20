@@ -16,7 +16,7 @@ To retrieve your notes, the script will make an unzipped copy of the archeive av
 - Open myvault in Obsidian 
 - create a symbolic link to local folder ```ln -s ~/Dropbox/Obsidian_Cloud/.obsidian  ~/Obsidian_Local/ ```
 5. Install [7-zip](https://www.7-zip.org/download.html) 
-6. Zip and encrypt your private_notes using Terminal ``` 7z a -mhe -t7z private_notes.7z private_notes
+6. Zip and encrypt your private_notes using Terminal ``` 7z a -mhe -t7z private_notes.7z private_notes```
 (You will be prompted for a password. Note it down!)	
 8. dowonload  toggle_private.sh from repository and place it anywhere on your  computer
 9. adapt paths in script where shown
@@ -29,7 +29,7 @@ To retrieve your notes, the script will make an unzipped copy of the archeive av
 2. Install Cloud Service App (as Dropbox) and a Folder Sync App of your choice (as [Dropsync](https://play.google.com/store/apps/details?id=com.ttxapps.dropsync&hl=de&gl=US))
 3. On File Manager create an Obsidian_Local Folder anywhere on your device
 4. On Folder Sync App, pair Obsidian_Local with Obsidian_Cloud on the Cloud Service App. Exclude pattern myvault to be synched. 
-5. Download toggle_vault_droid.sh from repository to your device
+5. Download toggle_droid.sh from repository to your device
 6. adapt path to Obsidian_Local in script
 7. Open Termux and enter ```mkdir .shortcuts; mv /path_to/toggle_droid.sh .shortcuts```
 8. Make script executable  ```chmod +x .shortcuts/toggle_droid.sh ```
