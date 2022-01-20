@@ -42,7 +42,7 @@ To retrieve your notes, the script will make an unzipped copy of the archive ava
 
 # Usage
 (on any device) 
-1. Start toggle_private or toggle_droid by click or via command line
+1. Start toggle_private or toggle_droid respectively through click or via command line
 2. If vault is open, you will be promted to close it
 3. If vault is closed, you will be prompted for password to open it
 
