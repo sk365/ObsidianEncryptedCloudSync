@@ -14,14 +14,14 @@ To retrieve your notes, the script will make an unzipped copy of the archeive av
 3. Place vault to be encrypted and synced in Obsidian_Local, rename vault to private_notes
 4. Optional if you want to sync Obsidian settings across devices: 
 - Open myvault in Obsidian 
-- create a symbolic link to local folder ```yaml ln -s ~/Dropbox/Obsidian_Cloud/.obsidian  ~/Obsidian_Local/ ```
+- create a symbolic link to local folder ```ln -s ~/Dropbox/Obsidian_Cloud/.obsidian  ~/Obsidian_Local/ ```
 5. Install [7-zip](https://www.7-zip.org/download.html) 
-6. Zip and encrypt your private_notes using Terminal ```yaml 7z a -mhe -t7z private_notes.7z private_notes
+6. Zip and encrypt your private_notes using Terminal ``` 7z a -mhe -t7z private_notes.7z private_notes
 (You will be prompted for a password. Note it down!)	
 8. dowonload  toggle_private.sh from repository and place it anywhere on your  computer
 9. adapt paths in script where shown
-10. Make script executable  ```yaml chmod +x toggle_private.sh ```
-11. Optional in Mac: Make skript command as to execute it on click ```yaml mv toggle_private.sh toggle_private_vault.command```
+10. Make script executable  ```chmod +x toggle_private.sh ```
+11. Optional in Mac: Make skript command as to execute it on click ```mv toggle_private.sh toggle_private_vault.command```
 12. Install [7-zip](https://www.7-zip.org/download.html) 
 
 ## Android:
@@ -32,8 +32,8 @@ To retrieve your notes, the script will make an unzipped copy of the archeive av
 5. Download toggle_vault_droid.sh from repository to your device
 6. adapt path to Obsidian_Local in script
 7. Open Termux and enter ```mkdir .shortcuts; mv /path_to/toggle_droid.sh .shortcuts```
-8. Make script executable  ```yaml chmod +x .shortcuts/toggle_droid.sh ```
-9. Type ```yaml 7z```and install the package as instructed. In case mirror is down change mirror:  ```yaml termux-change-repo```
+8. Make script executable  ```chmod +x .shortcuts/toggle_droid.sh ```
+9. Type ```7z```and install the package as instructed. In case mirror is down change mirror:  ```termux-change-repo```
 10. Install a Termux Widget pointing to toggle_droid.sh
 
 # Usage
