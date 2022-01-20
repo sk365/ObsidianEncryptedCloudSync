@@ -35,7 +35,7 @@ To retrieve your notes, the script will make an unzipped copy of the archive ava
 5. In the Folder Sync App settings, exclude pattern private_notes to be synched. 
 6. Download toggle_droid.sh from repository to your device
 7. Edit script to adapt to path to your Obsidian_Local folder 
-8. Open Termux and enter ```mkdir .shortcuts; mv /path_to/toggle_droid.sh .shortcuts```
+8. Open Termux and move script:  ```mkdir .shortcuts; mv /path_to/toggle_droid.sh .shortcuts```
 9. Make script executable  ```chmod +x .shortcuts/toggle_droid.sh ```
 10. Type ```7z```and install the package as instructed. In case mirror you recieve a package unavailable error message down change mirror:  ```termux-change-repo```
 11. Install a Termux Widget pointing to toggle_droid.sh
