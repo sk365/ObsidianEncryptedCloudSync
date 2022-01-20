@@ -46,7 +46,7 @@ To retrieve your notes, the script will make an unzipped copy of the archive ava
 2. If vault is open, you will be promted to close it
 3. If vault is closed, you will be prompted for password to open it
 
-# File Creation Dates
+## File Creation Dates
 
 Zipping and unzipping may distort the order of note creation shown when displaying a list in Obsidian's file explorer. To account for this, the scripts include a loop to reset file creation dates to dates set in note yaml metadata. To make use of this, set a template to begin your notes with this heading: 
 ```
