@@ -37,8 +37,8 @@ To retrieve your notes, the script will make an unzipped copy of the archive ava
 7. Edit script to adapt to path to your Obsidian_Local folder 
 8. Open Termux and move script:  ```mkdir .shortcuts; mv /path_to/toggle_droid.sh .shortcuts```
 9. Make script executable  ```chmod +x .shortcuts/toggle_droid.sh ```
-10. Type ```7z```and install the package as instructed. In case mirror you recieve a package unavailable error message down change mirror:  ```termux-change-repo```
-11. Install a Termux Widget pointing to toggle_droid.sh
+10. Type ```7z```and install the package as instructed. Should you recieve a package unavailable error message change mirror:  ```termux-change-repo```
+11. On your Android launcher, start Termux Widget and make a widget pointing to toggle_droid.sh
 
 # Usage
 (on any device) 
