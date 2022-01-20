@@ -4,19 +4,21 @@ Scripts to encrypt Obsidian Vaults and sync them over the cloud
 A setup and shell scripts to use a public cloud service as Dropbox to sync encrypted Obsidian Vaults between Mac an/or Linux and/or Android devices. No root needed.
 
 When closing the vault, the script will create an encrypted 7z archive of the vault and upload it to the cloud. After closing, all unencrypted notes are deleted. 
-To retrieve your notes, the script will make an unzipped copy of the archeive available locally. 
+
+To retrieve your notes, the script will make an unzipped copy of the archive available locally. 
 
 # Installation
 
 ## Mac / Linux:
 1. Create a cloud linked folder (such as ~/Dropbox/Obsidian_Cloud)
 2. Create a local folder that is not linked to the cloud (such as ~/Obsidian_Local)
-3. Place vault to be encrypted and synced in Obsidian_Local, rename vault to private_notes
-4. Optional if you want to sync Obsidian settings across devices: 
-- Open myvault in Obsidian 
+3. Place your vault to be encrypted and synced in Obsidian_Local
+4. Rename vault to private_notes
+5. Optional if you want to sync Obsidian settings across devices: 
+- Open private_notes in Obsidian 
 - create a symbolic link to local folder ```ln -s ~/Dropbox/Obsidian_Cloud/.obsidian  ~/Obsidian_Local/ ```
-5. Install [7-zip](https://www.7-zip.org/download.html) 
-6. Zip and encrypt your private_notes using Terminal ``` 7z a -mhe -t7z private_notes.7z private_notes```
+6. Install [7-zip](https://www.7-zip.org/download.html) 
+7. Zip and encrypt your private_notes using Terminal ``` 7z a -mhe -t7z private_notes.7z private_notes```
 (You will be prompted for a password. Note it down!)	
 8. dowonload  toggle_private.sh from repository and place it anywhere on your  computer
 9. adapt paths in script where shown
@@ -26,15 +28,17 @@ To retrieve your notes, the script will make an unzipped copy of the archeive av
 
 ## Android:
 1. Install [Termux](https://github.com/termux/termux-app) and [Termux Widget](https://github.com/termux/termux-widget) 
-2. Install Cloud Service App (as Dropbox) and a Folder Sync App of your choice (as [Dropsync](https://play.google.com/store/apps/details?id=com.ttxapps.dropsync&hl=de&gl=US))
-3. On File Manager create an Obsidian_Local Folder anywhere on your device
-4. On Folder Sync App, pair Obsidian_Local with Obsidian_Cloud on the Cloud Service App. Exclude pattern myvault to be synched. 
-5. Download toggle_droid.sh from repository to your device
-6. adapt path to Obsidian_Local in script
-7. Open Termux and enter ```mkdir .shortcuts; mv /path_to/toggle_droid.sh .shortcuts```
-8. Make script executable  ```chmod +x .shortcuts/toggle_droid.sh ```
-9. Type ```7z```and install the package as instructed. In case mirror is down change mirror:  ```termux-change-repo```
-10. Install a Termux Widget pointing to toggle_droid.sh
+2. Install Cloud Service App (as Dropbox) of your choice
+3. Install a Folder Sync App of your choice (as [Dropsync](https://play.google.com/store/apps/details?id=com.ttxapps.dropsync&hl=de&gl=US))
+3. In File Manager, create a Obsidian_Local folder anywhere on your device
+4. In the Folder Sync App, pair Obsidian_Local with Obsidian_Cloud.
+5. In the Folder Sync App settings, exclude pattern private_notes to be synched. 
+6. Download toggle_droid.sh from repository to your device
+7. adapt path to Obsidian_Local in script
+8. Open Termux and enter ```mkdir .shortcuts; mv /path_to/toggle_droid.sh .shortcuts```
+9. Make script executable  ```chmod +x .shortcuts/toggle_droid.sh ```
+10. Type ```7z```and install the package as instructed. In case mirror is down change mirror:  ```termux-change-repo```
+11. Install a Termux Widget pointing to toggle_droid.sh
 
 # Usage
 (on any device) 
