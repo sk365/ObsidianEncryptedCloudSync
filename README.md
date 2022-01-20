@@ -48,7 +48,7 @@ To retrieve your notes, the script will make an unzipped copy of the archive ava
 
 # File Creation Dates
 
-Zipping and unzipping can distort the order of note creation shown when displaying a list in Obsidian's file explorer. To account for this, the scripts include a loop to reset file creation dates to dates set in note yaml metadata. To make use of this, set a template to begin your notes with this heading: 
+Zipping and unzipping may distort the order of note creation shown when displaying a list in Obsidian's file explorer. To account for this, the scripts include a loop to reset file creation dates to dates set in note yaml metadata. To make use of this, set a template to begin your notes with this heading: 
 ```
 ---
 created: YYYY-MM-DD HH:MM
