@@ -1,5 +1,5 @@
 # ObsidianEncryptedCloudSync
-These are scripts and a procedure to encrypt Obsidian vaults and sync them over the cloud.
+These are scripts to encrypt Obsidian vaults at rest and to sync them over the cloud.
 
 A setup and shell scripts to use a public cloud service as Dropbox to sync encrypted Obsidian Vaults between Mac an/or Linux and/or Android devices. No root needed.
 
