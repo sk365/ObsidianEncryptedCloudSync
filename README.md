@@ -21,7 +21,7 @@ To retrieve your notes, the script will make an unzipped copy of the archive ava
 7. Zip and encrypt your private_notes using Terminal ``` 7z a -mhe -t7z private_notes.7z private_notes```
 (You will be prompted for a password. Note it down!)	
 8. dowonload  toggle_private.sh from repository and place it anywhere on your  computer
-9. adapt paths in script where shown
+9. Edit script to adapt to your local and cloud paths in the heading
 10. Make script executable  ```chmod +x toggle_private.sh ```
 11. Optional in Mac: Make skript command as to execute it on click ```mv toggle_private.sh toggle_private_vault.command```
 12. Install [7-zip](https://www.7-zip.org/download.html) 
@@ -34,7 +34,7 @@ To retrieve your notes, the script will make an unzipped copy of the archive ava
 4. In the Folder Sync App, pair Obsidian_Local with Obsidian_Cloud.
 5. In the Folder Sync App settings, exclude pattern private_notes to be synched. 
 6. Download toggle_droid.sh from repository to your device
-7. adapt path to Obsidian_Local in script
+7. Edit script to adapt to path to your Obsidian_Local folder 
 8. Open Termux and enter ```mkdir .shortcuts; mv /path_to/toggle_droid.sh .shortcuts```
 9. Make script executable  ```chmod +x .shortcuts/toggle_droid.sh ```
 10. Type ```7z```and install the package as instructed. In case mirror is down change mirror:  ```termux-change-repo```
