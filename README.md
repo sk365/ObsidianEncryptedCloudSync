@@ -9,8 +9,8 @@ To retrieve your notes, the script will make an unzipped copy of the archeive av
 # Installation
 
 ## Mac / Linux:
-1. Create a cloud linked folder as ~/Dropbox/Obsidian_Cloud/myvault
-2. Create a local folder that is not linked to the cloud as ~/Obsidian_Local
+1. Create a cloud linked folder (such as ~/Dropbox/Obsidian_Cloud)
+2. Create a local folder that is not linked to the cloud (such as ~/Obsidian_Local)
 3. Place vault to be encrypted and synced in Obsidian_Local, rename vault to private_notes
 4. Optional if you want to sync Obsidian settings across devices: 
 - Open myvault in Obsidian 
