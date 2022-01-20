@@ -23,8 +23,8 @@ To retrieve your notes, the script will make an unzipped copy of the archive ava
 8. dowonload  toggle_private.sh from repository and place it anywhere on your  computer
 9. Edit script to adapt to your local and cloud paths in the heading
 10. Make script executable  ```chmod +x toggle_private.sh ```
-11. Optional in Mac: Make skript command as to execute it on click ```mv toggle_private.sh toggle_private_vault.command```
-12. Install [7-zip](https://www.7-zip.org/download.html) 
+11. Optional in Mac: Make skript a command as to execute it on click ```mv toggle_private.sh toggle_private_vault.command```
+
 
 ## Android:
 1. Install [Termux](https://github.com/termux/termux-app) and [Termux Widget](https://github.com/termux/termux-widget) 
