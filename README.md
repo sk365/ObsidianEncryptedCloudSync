@@ -1,5 +1,5 @@
 # ObsidianEncryptedCloudSync
-Scripts to encrypt Obsidian Vaults and sync them over the cloud
+These are scripts and a procedure to encrypt Obsidian vaults and sync them over the cloud.
 
 A setup and shell scripts to use a public cloud service as Dropbox to sync encrypted Obsidian Vaults between Mac an/or Linux and/or Android devices. No root needed.
 
@@ -48,9 +48,10 @@ To retrieve your notes, the script will make an unzipped copy of the archive ava
 
 # File Creation Dates
 
-Zipping and unzipping can modify note creation as shown when displaying a file list in Obsidian's file explorer when files are modified. To account for this, the scripts include a loop to reset file creation dates to dates set in note yaml metadata. To make use of this, set a template to begin your notes with this heading: 
-```---
-created:YYYY-MM-DD HH:MM
+Zipping and unzipping can distort the order of note creation shown when displaying a list in Obsidian's file explorer. To account for this, the scripts include a loop to reset file creation dates to dates set in note yaml metadata. To make use of this, set a template to begin your notes with this heading: 
+```
+---
+created: YYYY-MM-DD HH:MM
 ```
 e.g.
 ```
@@ -58,4 +59,4 @@ e.g.
 created: 2022-01-20 17:01
 ```
 
-If you do not care about file creation order, simply delete the 
+If you do not care about file creation order, simply remove the loop from the scripts.
